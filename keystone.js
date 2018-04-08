@@ -20,6 +20,15 @@ keystone.init({
 	'views': 'templates/views',
 	'view engine': '.hbs',
 
+	// "wysiwyg images": true,
+	"wysiwyg cloudinary images": true,
+	"wysiwyg additional buttons": "fontselect, fontsizeselect",
+	"wysiwyg additional plugins": "paste",
+	"wysiwyg additional options": {
+		paste_data_images: true,
+		external_plugins: { uploadimage: "/js/uploadimage/plugin.min.js" }
+	},
+
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
 		partialsDir: 'templates/views/partials',
