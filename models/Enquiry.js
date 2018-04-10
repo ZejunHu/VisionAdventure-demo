@@ -14,11 +14,11 @@ var Enquiry = new keystone.List('Enquiry', {
 Enquiry.add({
 	name: { type: Types.Name, required: true },
 	email: { type: Types.Email, required: true },
-	phone: { type: String },
+	phone: { type: String, required: true },
 	enquiryType: { type: Types.Select, options: [
-		{ value: 'message', label: 'Just leaving a message' },
-		{ value: 'question', label: 'I\'ve got a question' },
-		{ value: 'other', label: 'Something else...' },
+		{ value: 'message', label: '留言信息' },
+		{ value: 'question', label: '问题咨询' },
+		{ value: 'other', label: '其他' },
 	] },
 	message: { type: Types.Markdown, required: true },
 	createdAt: { type: Date, default: Date.now },
@@ -58,10 +58,10 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'enquiry-notification',
 			transport: 'mailgun',
 		}).send({
-			to: admins,
+			to: 'info@visionadventure.com',
 			from: {
 				name: 'VisionAdventure',
-				email: 'contact@visionadventure.com',
+				email: 'info@visionadventure.com',
 			},
 			subject: 'New Enquiry for VisionAdventure',
 			enquiry: enquiry,

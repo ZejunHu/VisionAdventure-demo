@@ -63,7 +63,7 @@
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
-      top: -67px;
+      top: -97px;
       -webkit-transition: -webkit-transform 0.2s;
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s;
@@ -97,4 +97,9 @@
       transform: translate3d(0, 100%, 0);
     }
   }
+}
+
+.navbar-logo {
+  height: 60px;
+  width: 120px;
 }

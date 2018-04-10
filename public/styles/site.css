@@ -3,6 +3,11 @@ body {
   color: #212529;
   font-family: 'Lora', 'Times New Roman', serif; }
 
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #0085A1; }
+
 p {
   line-height: 1.5;
   margin: 30px 0; }
@@ -17,6 +22,9 @@ h5,
 h6 {
   font-weight: 800;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+section {
+  padding: 8rem 0; }
 
 a {
   color: #212529;
@@ -111,7 +119,7 @@ img::-moz-selection {
       #mainNav.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
-        top: -67px;
+        top: -97px;
         -webkit-transition: -webkit-transform 0.2s;
         -moz-transition: -moz-transform 0.2s;
         transition: transform 0.2s;
@@ -132,6 +140,10 @@ img::-moz-selection {
         -ms-transform: translate3d(0, 100%, 0);
         -o-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0); } }
+
+.navbar-logo {
+  height: 60px;
+  width: 120px; }
 
 header.masthead {
   margin-bottom: 50px;
@@ -203,6 +215,36 @@ header.masthead {
       font-size: 55px; }
     header.masthead .post-heading .subheading {
       font-size: 30px; } }
+
+header.masthead-homepage {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead-homepage hr {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  header.masthead-homepage h1 {
+    font-size: 2rem; }
+  header.masthead-homepage p {
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    header.masthead-homepage p {
+      font-size: 1.15rem; } }
+  @media (min-width: 992px) {
+    header.masthead-homepage {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead-homepage h1 {
+        font-size: 3rem; } }
+  @media (min-width: 1200px) {
+    header.masthead-homepage h1 {
+      font-size: 4rem; } }
 
 .post-preview > a {
   color: #212529; }
@@ -293,13 +335,17 @@ footer {
     margin-bottom: 0;
     text-align: center; }
 
+.img-footer {
+  width: 100px;
+  height: 100px; }
+
 .btn {
   font-size: 14px;
   font-weight: 800;
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 200px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .btn-primary {
@@ -313,3 +359,55 @@ footer {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px; }
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 133, 161, 0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        padding: 0 15px;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 18px; }
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1; }
+  .portfolio-box:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 16px; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 22px; } }
+
+.home-icon {
+  height: 8rem;
+  width: 8rem; }
+
+.image-full-width {
+  width: 100%;
+  height: auto; }

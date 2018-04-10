@@ -5,6 +5,12 @@ body {
   @include serif-font;
 }
 
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $primary;
+}
+
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -21,6 +27,10 @@ h5,
 h6 {
   font-weight: 800;
   @include sans-serif-font;
+}
+
+section {
+  padding: 8rem 0;
 }
 
 a {

@@ -1,0 +1,54 @@
+<header class="masthead" style="background-image: url('/images/apply/background.JPG')">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="page-heading">
+					<h1>在线申请</h1>
+					<!-- <span class="subheading">About Our Company</span> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3">
+			{{#if enquirySubmitted}}
+			<h3>Thanks for getting in touch.</h3>
+			{{else}}
+			<form method="post">
+				<input type="hidden" name="action" value="contact">
+				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+					<label>姓名</label>
+					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+				</div>
+				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>邮箱</label>
+					<input type="email" name="email" class="form-control" value="{{formData.email}}">
+				</div>
+				<div class="form-group">
+					<label>电话</label>
+					<input type="text" name="phone" class="form-control" value="{{formData.phone}}">
+				</div>
+				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+					<label>What are you contacting us about?</label>
+					<select name="enquiryType" class="form-control">
+						<option value="">请选择</option>
+						{{#each enquiryTypes}}
+						<option value="{{value}}">{{label}}</option>
+						{{/each}}
+					</select>
+				</div>
+				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+					<label>内容</label>
+					<textarea name="message" placeholder="有什么想说的吗" rows="4" class="form-control">{{formData.message}}</textarea>
+				</div>
+				<div class="form-actions mx-auto text-right">
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
+			{{/if}}
+		</div>
+	</div>
+</div>

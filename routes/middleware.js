@@ -19,10 +19,13 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Blog', key: 'blog', href: '/blog' },
-		{ label: 'Gallery', key: 'gallery', href: '/gallery' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+		{ label: '首页', key: 'home', href: '/' },
+		{ label: '关于展望', key: 'about', href: '/about' },
+		{ label: '展望游学夏令营', key: 'info', href: '/info' },
+		{ label: '在线申请', key: 'apply', href: '/apply' },
+		{ label: '美妙瞬间', key: 'gallery', href: '/gallery' },
+		{ label: '点滴记忆', key: 'blog', href: '/blog' },
+		{ label: '联系我们', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;
 	next();
