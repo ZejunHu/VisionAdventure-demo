@@ -1,7 +1,11 @@
+@font-face {
+  font-family: "Yahei";
+  src: url("/fonts/Microsoft Yahei.ttf"); }
+
 body {
   font-size: 20px;
   color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif; }
+  font-family: Yahei; }
 
 hr {
   max-width: 50px;
@@ -21,7 +25,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: Yahei; }
 
 section {
   padding: 8rem 0; }
@@ -71,11 +75,17 @@ img::-moz-selection {
   color: #fff;
   background: transparent; }
 
+figcaption {
+  color: #868e96;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px; }
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: Yahei; }
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40; }
@@ -187,7 +197,7 @@ header.masthead {
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: Yahei; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading h1,
       header.masthead .site-heading h1 {
@@ -202,12 +212,12 @@ header.masthead {
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: Yahei; }
   header.masthead .post-heading .meta {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: Yahei; }
     header.masthead .post-heading .meta a {
       color: #fff; }
   @media only screen and (min-width: 768px) {
@@ -292,11 +302,11 @@ header.masthead-homepage {
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: Yahei; }
     .floating-label-form-group input::-webkit-input-placeholder,
     .floating-label-form-group textarea::-webkit-input-placeholder {
       color: #868e96;
-      font-family: 'Lora', 'Times New Roman', serif; }
+      font-family: Yahei; }
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -346,7 +356,8 @@ footer {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 200px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: Yahei;
+  cursor: pointer; }
 
 .btn-primary {
   background-color: #0085A1;
@@ -387,7 +398,7 @@ footer {
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         padding: 0 15px;
-        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        font-family: Yahei; }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 14px;
         font-weight: 600;
@@ -411,3 +422,44 @@ footer {
 .image-full-width {
   width: 100%;
   height: auto; }
+
+.qr-code-icon {
+  height: 15rem;
+  width: 15rem; }
+
+.info-main-content {
+  margin: 2rem 0; }
+  .info-main-content .info-content-div {
+    margin: 1rem 0; }
+    .info-main-content .info-content-div p {
+      font-size: 18px;
+      padding: 2px 0;
+      margin: 2px 0;
+      letter-spacing: 2px; }
+  .info-main-content .info-sub-heading {
+    font-weight: bold;
+    margin: 15px 0; }
+  .info-main-content .info-sub-content {
+    border: 1px solid #0085A1;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #495057; }
+
+.info-qa {
+  margin: 2rem 0; }
+  .info-qa .info-qa-q {
+    font-weight: bold;
+    margin: 1rem 0; }
+  .info-qa .info-qa-a {
+    margin: 0.5rem 0; }
+    .info-qa .info-qa-a p {
+      margin: 1px 0; }
+
+.info-link {
+  color: #0085A1;
+  text-decoration: underline; }
+
+@media (min-width: 768px) {
+  .info-timetable {
+    padding: 0 8rem; } }

@@ -2,7 +2,7 @@
 body {
   font-size: 20px;
   color: $gray-900;
-  @include serif-font;
+  font-family: Yahei;
 }
 
 hr {
@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  @include sans-serif-font;
+  font-family: Yahei;
 }
 
 section {
@@ -84,4 +84,11 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+figcaption {
+  color: $gray-600;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
 }

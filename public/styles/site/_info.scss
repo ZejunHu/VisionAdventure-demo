@@ -1,0 +1,48 @@
+.info-main-content {
+  margin: 2rem 0;
+  .info-content-div {
+    margin: 1rem 0;
+    p {
+      font-size: 18px;
+      padding: 2px 0;
+      margin: 2px 0;
+      letter-spacing: 2px;
+    }
+  }
+  .info-sub-heading {
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  .info-sub-content {
+    border: 1px solid $primary;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: $gray-700;
+  }
+}
+
+.info-qa {
+  margin: 2rem 0;
+  .info-qa-q {
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  .info-qa-a {
+    margin: 0.5rem 0;
+    p {
+      margin: 1px 0;
+    }
+  }
+}
+
+.info-link {
+  color: $primary;
+  text-decoration: underline;
+}
+
+.info-timetable {
+  @media (min-width: 768px) {
+    padding: 0 8rem;
+  }
+}

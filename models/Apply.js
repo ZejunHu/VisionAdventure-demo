@@ -12,15 +12,31 @@ var Apply = new keystone.List('Apply', {
 });
 
 Apply.add({
-	name: { type: Types.Name, required: true },
+	name: { type: String, required: true },
 	email: { type: Types.Email, required: true },
-	phone: { type: String, required: true },
-	applyType: { type: Types.Select, options: [
-		{ value: 'message', label: '留言信息' },
-		{ value: 'question', label: '问题咨询' },
-		{ value: 'other', label: '其他' },
+	birth: { type: String, required: true },
+	sex: { type: Types.Select, options: [
+		{ value: 'male', label: '男' },
+		{ value: 'female', label: '女' },
 	] },
-	message: { type: Types.Markdown, required: true },
+	address: { type: String, required: true },
+	province: { type: String, required: true },
+	city: { type: String, required: true },
+	phone: { type: String, required: true },
+	wechat: { type: String, required: true },
+	allergic: { type: String, required: true },
+	parentName: { type: String, required: true },
+	parentEmail: { type: Types.Email, required: true },
+	parentBirth: { type: String, required: true },
+	parentAddress: { type: String, required: true },
+	parentProvince: { type: String, required: true },
+	parentCity: { type: String, required: true },
+	parentMobile: { type: String, required: true },
+	parentPhone: { type: String },
+	parentAllergic: { type: String, required: true },
+	agent: { type: String },
+	signature: { type: String, required: true },
+	parentSignature: { type: String, required: true },
 	createdAt: { type: Date, default: Date.now },
 });
 

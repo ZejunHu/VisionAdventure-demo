@@ -6,7 +6,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 200px;
-  @include sans-serif-font;
+  font-family: Yahei;
+  cursor: pointer;
 }
 
 .btn-primary {
