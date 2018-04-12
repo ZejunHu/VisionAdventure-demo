@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 
 	// Set locals
 	locals.section = 'apply';
-	locals.applyTypes = Apply.fields.applyType.ops;
+	locals.applyTypes = Apply.fields.sex.ops;
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
 	locals.applySubmitted = false;

@@ -3,7 +3,7 @@
   src: url("/fonts/Microsoft Yahei.ttf"); }
 
 body {
-  font-size: 20px;
+  font-size: 16px;
   color: #212529;
   font-family: Yahei; }
 
@@ -81,6 +81,9 @@ figcaption {
   text-align: center;
   margin-top: 5px; }
 
+.container-large-margin-top {
+  margin-top: 8rem; }
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
@@ -88,30 +91,36 @@ figcaption {
   font-family: Yahei; }
   #mainNav .navbar-brand {
     font-weight: 800;
-    color: #343a40; }
+    color: #343a40;
+    margin: 0;
+    padding: 0; }
   #mainNav .navbar-toggler {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 800;
     padding: 13px;
     text-transform: uppercase;
     color: #343a40; }
   #mainNav .navbar-nav > li.nav-item > a {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase; }
   @media only screen and (min-width: 992px) {
     #mainNav {
       border-bottom: 1px solid transparent;
-      background: transparent; }
+      background: #343a40; }
       #mainNav .navbar-brand {
-        padding: 10px 20px;
+        padding: 0;
         color: #fff; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: rgba(255, 255, 255, 0.8); }
       #mainNav .navbar-nav > li.nav-item > a {
-        padding: 10px 20px;
-        color: #fff; }
+        padding: 10px 8px;
+        color: #fff; } }
+    @media only screen and (min-width: 992px) and (min-width: 1200px) {
+      #mainNav .navbar-nav > li.nav-item > a {
+        padding: 10px 20px; } }
+  @media only screen and (min-width: 992px) {
         #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
           color: rgba(255, 255, 255, 0.8); } }
   @media only screen and (min-width: 992px) {
@@ -152,8 +161,9 @@ figcaption {
         transform: translate3d(0, 100%, 0); } }
 
 .navbar-logo {
-  height: 60px;
-  width: 120px; }
+  height: 80px;
+  width: 160px;
+  margin: 0; }
 
 header.masthead {
   margin-bottom: 50px;
@@ -335,6 +345,15 @@ header.masthead-homepage {
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6; }
 
+.contact-container {
+  margin: 6rem auto; }
+  .contact-container h4 {
+    font-weight: 600;
+    font-size: 1.2rem; }
+  @media (min-width: 768px) {
+    .contact-container {
+      padding: 0 8rem; } }
+
 footer {
   padding: 50px 0 65px; }
   footer .list-inline {
@@ -355,7 +374,7 @@ footer {
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 200px;
+  border-radius: 10px;
   font-family: Yahei;
   cursor: pointer; }
 
@@ -463,3 +482,19 @@ footer {
 @media (min-width: 768px) {
   .info-timetable {
     padding: 0 8rem; } }
+
+.gallery-grid {
+  padding: 1px; }
+
+.gallery-image {
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 576px) {
+    .gallery-image {
+      height: 14rem; } }
+  @media (min-width: 768px) {
+    .gallery-image {
+      height: 10rem; } }
+  @media (min-width: 1200px) {
+    .gallery-image {
+      height: 14rem; } }

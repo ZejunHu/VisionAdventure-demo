@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
 				<div class="page-heading">
-					<h1>联系我们</h1>
+					<h1 class="my-5">联系我们</h1>
 					<!-- <span class="subheading">About Our Company</span> -->
 				</div>
 			</div>
@@ -12,40 +12,34 @@
 	</div>
 </header>
 
-<div class="container">
-	<div class="my-5">
-		<h3>微信联系</h3>
-		<div class="row">
-			<div class="col-md-6 text-center">
-				<img src="/images/contact/微信联系1.jpeg" class="qr-code-icon" alt="微信联系1">
+<div class="container contact-container">
+	<div class="row">
+		<div class="col-sm-10 col-lg-10 offset-lg-2">
+			<div class="my-5">
+				<h4>微信联系：搜索ID：VisionAdventure，或扫描下方二维码</h4>
 			</div>
-			<div class="col-md-6 text-center">
-				<img src="/images/contact/微信联系2.jpeg" class="qr-code-icon" alt="微信联系2">
+
+			<div class="my-5">
+				<h4>加QQ联系我们: 853287013</h4>
 			</div>
-		</div>
-	</div>
 
-	<div class="my-5">
-		<h3>加QQ联系我们: 853287013</h3>
-	</div>
+			<div class="my-5">
+				<h4>发送Email到：info@visionadventure.ca或者visionadventure@sina.com</h4>
+			</div>
 
-	<div class="my-5">
-		<h3>发送Email到：info@visionadventure.ca或者visionadventure@sina.com</h3>
-	</div>
-
-	<div class="my-5">
-		<h3>关注展望游学夏令营公众号，了解最新动态</h3>
-		<div class="text-center">
-			<img src="/images/contact/微信公众号.jpg" class="qr-code-icon" alt="微信公众号">
+			<div class="my-5">
+				<h4>扫描下方二维码，关注展望游学夏令营公众号，了解最新动态</h4>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="container">
+	<h3 class="text-center">联系表格</h3>
 	<div class="row">
 		<div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3">
 			{{#if enquirySubmitted}}
-			<h3 class="my-5">谢谢您的关注，我们会尽快回应！</h3>
+			<h4 class="my-5">谢谢您的关注，我们会尽快回应！</h4>
 			{{else}}
 			<form method="post">
 				<input type="hidden" name="action" value="contact">
@@ -75,7 +69,7 @@
 					<textarea name="message" placeholder="有什么想说的吗" rows="4" class="form-control">{{formData.message}}</textarea>
 				</div>
 				<div class="form-actions mx-auto text-right">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="btn btn-primary">提交</button>
 				</div>
 			</form>
 			{{/if}}

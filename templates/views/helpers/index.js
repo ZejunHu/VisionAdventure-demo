@@ -238,7 +238,7 @@ module.exports = function () {
 			// create boolean flag state if currentPage
 			var isActivePage = ((page === currentPage) ? true : false);
 			// need an active class indicator
-			var liClass = ((isActivePage) ? ' class="active"' : '');
+			var liClass = ((isActivePage) ? ' class="active page-item"' : '');
 
 			// if '...' is sent from keystone then we need to override the url
 			if (page === '...') {

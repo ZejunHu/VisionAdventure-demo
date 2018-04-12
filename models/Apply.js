@@ -16,8 +16,8 @@ Apply.add({
 	email: { type: Types.Email, required: true },
 	birth: { type: String, required: true },
 	sex: { type: Types.Select, options: [
-		{ value: 'male', label: '男' },
-		{ value: 'female', label: '女' },
+		{ value: '男', label: '男' },
+		{ value: '女', label: '女' },
 	] },
 	address: { type: String, required: true },
 	province: { type: String, required: true },
@@ -74,7 +74,8 @@ Apply.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'apply-notification',
 			transport: 'mailgun',
 		}).send({
-			to: 'info@visionadventure.com',
+		//	to: 'info@visionadventure.com',
+		  to: 'wbsxbysharp@gmail.com',
 			from: {
 				name: 'VisionAdventure',
 				email: 'info@visionadventure.com',
@@ -88,5 +89,5 @@ Apply.schema.methods.sendNotificationEmail = function (callback) {
 };
 
 Apply.defaultSort = '-createdAt';
-Apply.defaultColumns = 'name, email, applyType, createdAt';
+Apply.defaultColumns = 'name, phone, sex, createdAt';
 Apply.register();

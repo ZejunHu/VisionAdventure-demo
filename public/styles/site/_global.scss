@@ -1,6 +1,6 @@
 // Global styling for this template
 body {
-  font-size: 20px;
+  font-size: 16px;
   color: $gray-900;
   font-family: Yahei;
 }
@@ -91,4 +91,8 @@ figcaption {
   font-size: 18px;
   text-align: center;
   margin-top: 5px;
+}
+
+.container-large-margin-top {
+  margin-top: 8rem;
 }

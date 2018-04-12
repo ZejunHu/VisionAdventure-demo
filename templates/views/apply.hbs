@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
 				<div class="page-heading">
-					<h1>在线申请</h1>
+					<h1 class="my-5">在线申请</h1>
 					<!-- <span class="subheading">About Our Company</span> -->
 				</div>
 			</div>
@@ -14,41 +14,123 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8 col-md-6 offset-sm-2 offset-md-3">
-			{{#if enquirySubmitted}}
+			{{#if applySubmitted}}
 			<h3 class="my-5">谢谢！您已完成申请！请尽快完成汇款！祝您旅途愉快！</h3>
 			{{else}}
 			<form method="post">
 				<input type="hidden" name="action" value="apply">
-				<div class="">
+				<div class="text-center">
 					<h3>学生资料</h3>
+					<hr>
 				</div>
 				<div class="form-group">
 					<label>学生姓名</label>
 					<input type="text" name="name" class="form-control" value="{{formData.name}}">
 				</div>
 				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>邮箱</label>
+					<label>电子邮件</label>
 					<input type="email" name="email" class="form-control" value="{{formData.email}}">
 				</div>
 				<div class="form-group">
-					<label>电话</label>
-					<input type="text" name="phone" class="form-control" value="{{formData.phone}}">
+					<label>出生日期</label>
+					<input type="text" name="birth" class="form-control" value="{{formData.birth}}">
 				</div>
 				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
-					<label>What are you contacting us about?</label>
-					<select name="enquiryType" class="form-control">
+					<label>性别</label>
+					<select name="sex" class="form-control">
 						<option value="">请选择</option>
-						{{#each enquiryTypes}}
+						{{#each applyTypes}}
 						<option value="{{value}}">{{label}}</option>
 						{{/each}}
 					</select>
 				</div>
-				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-					<label>内容</label>
-					<textarea name="message" placeholder="有什么想说的吗" rows="4" class="form-control">{{formData.message}}</textarea>
+				<div class="form-group">
+					<label>地址</label>
+					<input type="text" name="address" class="form-control" value="{{formData.address}}">
 				</div>
+				<div class="form-group">
+					<label>省份</label>
+					<input type="text" name="province" class="form-control" value="{{formData.province}}">
+				</div>
+				<div class="form-group">
+					<label>城市</label>
+					<input type="text" name="city" class="form-control" value="{{formData.city}}">
+				</div>
+				<div class="form-group">
+					<label>手机号码</label>
+					<input type="text" name="phone" class="form-control" value="{{formData.phone}}">
+				</div>
+				<div class="form-group">
+					<label>微信账号</label>
+					<input type="text" name="wechat" class="form-control" value="{{formData.wechat}}">
+				</div>
+				<div class="form-group">
+					<label>食物过敏</label>
+					<input type="text" name="allergic" class="form-control" value="{{formData.allergic}}">
+				</div>
+
+				<div class="text-center">
+					<h3>中国：家长/监护人资料</h3>
+					<hr>
+				</div>
+
+				<div class="form-group">
+					<label>家长/监护人姓名</label>
+					<input type="text" name="parentName" class="form-control" value="{{formData.parentName}}">
+				</div>
+				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>电子邮件</label>
+					<input type="email" name="parentEmail" class="form-control" value="{{formData.parentEmail}}">
+				</div>
+				<div class="form-group">
+					<label>出生日期</label>
+					<input type="text" name="parentBirth" class="form-control" value="{{formData.parentBirth}}">
+				</div>
+				<div class="form-group">
+					<label>地址</label>
+					<input type="text" name="parentAddress" class="form-control" value="{{formData.parentAddress}}">
+				</div>
+				<div class="form-group">
+					<label>省份</label>
+					<input type="text" name="parentProvince" class="form-control" value="{{formData.parentProvince}}">
+				</div>
+				<div class="form-group">
+					<label>城市</label>
+					<input type="text" name="parentCity" class="form-control" value="{{formData.parentCity}}">
+				</div>
+				<div class="form-group">
+					<label>手机号码</label>
+					<input type="text" name="parentMobile" class="form-control" value="{{formData.parentMobile}}">
+				</div>
+				<div class="form-group">
+					<label>住宅电话</label>
+					<input type="text" name="parentPhone" class="form-control" value="{{formData.parentPhone}}">
+				</div>
+				<div class="form-group">
+					<label>食物过敏</label>
+					<input type="text" name="parentAllergic" class="form-control" value="{{formData.parentAllergic}}">
+				</div>
+
+				<div class="text-center">
+					<h3>2018年夏令营: 由7月22日至8月11日</h3>
+					<hr>
+				</div>
+				<div class="form-group">
+					<label>代理人/机构（没有可不填）</label>
+					<input type="text" name="agent" class="form-control" value="{{formData.agent}}">
+				</div>
+				<div class="form-group">
+					<label>学生签名（线上申请请键入姓名及拼音）</label>
+					<input type="text" name="signature" class="form-control" value="{{formData.signature}}">
+				</div>
+				<div class="form-group">
+					<label>家长签名（线上申请请键入姓名及拼音）</label>
+					<input type="text" name="parentSignature" class="form-control" value="{{formData.parentSignature}}">
+				</div>
+
+
 				<div class="form-actions mx-auto text-right">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="btn btn-primary">提交</button>
 				</div>
 			</form>
 			{{/if}}

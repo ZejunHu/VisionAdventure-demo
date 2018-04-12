@@ -7,9 +7,11 @@
   .navbar-brand {
     font-weight: 800;
     color: $gray-800;
+    margin: 0;
+    padding: 0;
   }
   .navbar-toggler {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 800;
     padding: 13px;
     text-transform: uppercase;
@@ -18,7 +20,7 @@
   .navbar-nav {
     > li.nav-item {
       > a {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -27,9 +29,9 @@
   }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
-    background: transparent;
+    background: $gray-800;
     .navbar-brand {
-      padding: 10px 20px;
+      padding: 0;
       color: $white;
       &:focus,
       &:hover {
@@ -39,8 +41,11 @@
     .navbar-nav {
       > li.nav-item {
         > a {
-          padding: 10px 20px;
+          padding: 10px 8px;
           color: $white;
+          @media (min-width: 1200px) {
+            padding: 10px 20px;
+          }
           &:focus,
           &:hover {
             color: fade-out($white, .2);
@@ -100,6 +105,7 @@
 }
 
 .navbar-logo {
-  height: 60px;
-  width: 120px;
+  height: 80px;
+  width: 160px;
+  margin: 0;
 }

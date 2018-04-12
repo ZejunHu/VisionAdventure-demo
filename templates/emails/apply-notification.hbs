@@ -1,0 +1,168 @@
+<h1>Hi {{brand}}</h1>
+<p class="text-larger">An apply was just submitted to {{brand}}:</p>
+{{#if apply.phone}}
+	<h2>申请表格</h2>
+
+  <div class="">
+    <h3>学生资料</h3>
+  	{{#if apply.name}}
+      <div class="">
+        <p>学生姓名：</p>
+    		<p>{{apply.name}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.email}}
+      <div class="">
+        <p>电子邮件：</p>
+    		<a href="mailto:{{apply.email}}">{{apply.email}}</a>
+      </div>
+  	{{/if}}
+
+    {{#if apply.birth}}
+      <div class="">
+        <p>出生日期：</p>
+    		<p>{{apply.birth}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.sex}}
+      <div class="">
+        <p>性别：</p>
+    		<p>{{underscoreFormat apply 'sex'}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.address}}
+      <div class="">
+        <p>地址：</p>
+    		<p>{{apply.address}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.province}}
+      <div class="">
+        <p>省份：</p>
+    		<p>{{apply.province}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.city}}
+      <div class="">
+        <p>城市：</p>
+    		<p>{{apply.city}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.phone}}
+      <div class="">
+        <p>手机号码：</p>
+    		<p>{{apply.phone}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.wechat}}
+      <div class="">
+        <p>微信账号：</p>
+    		<p>{{apply.wechat}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.allergic}}
+      <div class="">
+        <p>食物过敏：</p>
+        <p>{{apply.allergic}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="">
+    <h3>中国：家长/监护人资料</h3>
+  	{{#if apply.parentName}}
+      <div class="">
+        <p>家长/监护人姓名：</p>
+    		<p>{{apply.parentName}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentEmail}}
+      <div class="">
+        <p>电子邮件：</p>
+    		<a href="mailto:{{apply.parentEmail}}">{{apply.parentEmail}}</a>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentBirth}}
+      <div class="">
+        <p>出生日期：</p>
+    		<p>{{apply.parentBirth}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentAddress}}
+      <div class="">
+        <p>地址：</p>
+    		<p>{{apply.parentAddress}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentProvince}}
+      <div class="">
+        <p>省份：</p>
+    		<p>{{apply.parentProvince}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentCity}}
+      <div class="">
+        <p>城市：</p>
+    		<p>{{apply.parentCity}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentMobile}}
+      <div class="">
+        <p>手机号码：</p>
+    		<p>{{apply.parentMobile}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentPhone}}
+      <div class="">
+        <p>住宅电话：</p>
+    		<p>{{apply.parentPhone}}</p>
+      </div>
+  	{{/if}}
+
+    {{#if apply.parentAllergic}}
+      <div class="">
+        <p>食物过敏：</p>
+        <p>{{apply.parentAllergic}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="">
+    <h3>签名</h3>
+    {{#if apply.agent}}
+      <div class="">
+        <p>代理人/机构：</p>
+        <p>{{apply.agent}}</p>
+      </div>
+    {{/if}}
+    {{#if apply.signature}}
+      <div class="">
+        <p>学生签名：</p>
+        <p>{{apply.signature}}</p>
+      </div>
+    {{/if}}
+    {{#if apply.parentSignature}}
+      <div class="">
+        <p>家长签名：</p>
+        <p>{{apply.parentSignature}}</p>
+      </div>
+    {{/if}}
+  </div>
+
+	<p class="text-muted">Sent {{underscoreFormat apply 'createdAt'}}</p>
+{{/if}}
