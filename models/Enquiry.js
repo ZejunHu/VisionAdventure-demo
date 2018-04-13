@@ -58,8 +58,8 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'enquiry-notification',
 			transport: 'mailgun',
 		}).send({
-			// to: 'info@visionadventure.com',
-			to: 'wbsxbysharp@gmail.com',
+			to: 'info@visionadventure.com',
+			// to: 'wbsxbysharp@gmail.com',
 			from: {
 				name: 'VisionAdventure',
 				email: 'info@visionadventure.com',

@@ -74,8 +74,8 @@ Apply.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'apply-notification',
 			transport: 'mailgun',
 		}).send({
-		//	to: 'info@visionadventure.com',
-		  to: 'wbsxbysharp@gmail.com',
+			to: 'info@visionadventure.com',
+		  // to: 'wbsxbysharp@gmail.com',
 			from: {
 				name: 'VisionAdventure',
 				email: 'info@visionadventure.com',

@@ -15,15 +15,28 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-md-10 offset-md-1">
-			<div class="blog">
+			<div class="">
 				{{# each data.posts.results}}
-				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post my-5">
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="my-5">
 					<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
 					<!-- <p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
 							{{#if author.name.first}}by {{author.name.first}}{{/if}}
 					</p> -->
-					{{#if image}}<img src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" class="img pull-right">{{/if}}
-					<p>{{{content.brief}}}</p>
+					<div class="row">
+						{{#if image}}
+						<div class="col-md-8">
+							<p>{{{content.brief}}}</p>
+						</div>
+						<div class="col-md-4">
+							<img src="{{{cloudinaryUrl image}}}" class="img-fluid my-4">
+						</div>
+						{{else}}
+						<div class="col-md-12">
+							<p>{{{content.brief}}}</p>
+						</div>
+						{{/if}}
+					</div>
+					<!-- {{#if image}}<img src="{{{cloudinaryUrl image}}}" class="img-fluid">{{/if}} -->
 					{{#if content.extended}}<a href="{{postUrl slug}}" class="btn btn-primary">展开阅读</a>{{/if}}
 				</div>
 				{{/each}}

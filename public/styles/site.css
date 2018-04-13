@@ -28,7 +28,7 @@ h6 {
   font-family: Yahei; }
 
 section {
-  padding: 8rem 0; }
+  padding: 6rem 0; }
 
 a {
   color: #212529;
@@ -167,7 +167,8 @@ figcaption {
 
 header.masthead {
   margin-bottom: 50px;
-  background: no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: #868e96;
   background-attachment: scroll;
   position: relative;
@@ -253,7 +254,7 @@ header.masthead-homepage {
     font-weight: 300; }
   @media (min-width: 768px) {
     header.masthead-homepage p {
-      font-size: 1.15rem; } }
+      font-size: 1.3rem; } }
   @media (min-width: 992px) {
     header.masthead-homepage {
       height: 100vh;
@@ -437,6 +438,25 @@ footer {
 .home-icon {
   height: 8rem;
   width: 8rem; }
+
+.home-scroll-icon {
+  height: 3rem;
+  width: 3rem; }
+
+.home-icon-head {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 43%; }
+  @media (min-width: 992px) {
+    .home-icon-head {
+      bottom: 1rem; } }
+  @media (min-width: 992px) {
+    .home-icon-head {
+      top: auto;
+      bottom: 1rem; } }
 
 .image-full-width {
   width: 100%;

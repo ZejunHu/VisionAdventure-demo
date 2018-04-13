@@ -2,7 +2,8 @@
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
-  background: no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
@@ -99,7 +100,7 @@ header.masthead-homepage {
   }
   @media (min-width: 768px) {
     p {
-      font-size: 1.15rem;
+      font-size: 1.3rem;
     }
   }
   @media (min-width: 992px) {
