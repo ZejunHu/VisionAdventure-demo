@@ -86,7 +86,8 @@ header.masthead {
 header.masthead-homepage {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-position: center center;
+  background-position: 0 3rem;
+  background-repeat: no-repeat;
   @include background-cover;
   hr {
     margin-top: 30px;
@@ -99,6 +100,7 @@ header.masthead-homepage {
     font-weight: 300;
   }
   @media (min-width: 768px) {
+    background-position: center center;
     p {
       font-size: 1.3rem;
     }

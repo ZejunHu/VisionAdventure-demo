@@ -240,7 +240,8 @@ header.masthead {
 header.masthead-homepage {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-position: center center;
+  background-position: 0 3rem;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -253,8 +254,10 @@ header.masthead-homepage {
   header.masthead-homepage p {
     font-weight: 300; }
   @media (min-width: 768px) {
-    header.masthead-homepage p {
-      font-size: 1.3rem; } }
+    header.masthead-homepage {
+      background-position: center center; }
+      header.masthead-homepage p {
+        font-size: 1.3rem; } }
   @media (min-width: 992px) {
     header.masthead-homepage {
       height: 100vh;
