@@ -33,7 +33,6 @@ Apply.add({
 	parentCity: { type: String, required: true },
 	parentMobile: { type: String, required: true },
 	parentPhone: { type: String },
-	parentAllergic: { type: String, required: true },
 	agent: { type: String },
 	signature: { type: String, required: true },
 	parentSignature: { type: String, required: true },

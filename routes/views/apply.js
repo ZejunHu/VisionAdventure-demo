@@ -21,7 +21,7 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'name, email, birth, sex, address, province, city, phone, wechat, allergic, parentName, parentEmail, parentBirth, parentAddress, parentProvince, parentCity, parentMobile, parentPhone, parentAllergic, agent, signature, parentSignature',
+			fields: 'name, email, birth, sex, address, province, city, phone, wechat, allergic, parentName, parentEmail, parentBirth, parentAddress, parentProvince, parentCity, parentMobile, parentPhone, agent, signature, parentSignature',
 			errorMessage: '申请表格填写错误：',
 		}, function (err) {
 			if (err) {
