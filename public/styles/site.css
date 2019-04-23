@@ -299,6 +299,17 @@ header.masthead-homepage {
   .post-preview > a > .post-title {
     font-size: 36px; } }
 
+.post {
+  max-width: 592px;
+  margin: 0 auto; }
+  .post img {
+    max-width: 100%; }
+  .post .post-text {
+    font-size: 20px; }
+    @media only screen and (max-width: 992px) {
+      .post .post-text {
+        font-size: 16px; } }
+
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
