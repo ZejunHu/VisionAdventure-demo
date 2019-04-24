@@ -3,7 +3,7 @@
 		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
 			<article>
 				<header>
-					<h1 class="my-5">{{data.post.title}}</h1>
+					<h1 class="my-5 post-header">{{data.post.title}}</h1>
 				</header>
 				<div class="post">
 					{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image width=750 height=450 crop='fit' }}}" class="image-full-width my-3">{{/if}}

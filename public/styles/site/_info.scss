@@ -39,6 +39,17 @@
 .info-link {
   color: $primary;
   text-decoration: underline;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  &:hover {
+    color: $danger;
+  }
+  @media (min-width: 576px) {
+    text-align: inherit;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+  }
 }
 
 .info-timetable {

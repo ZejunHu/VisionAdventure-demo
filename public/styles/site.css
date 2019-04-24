@@ -299,16 +299,23 @@ header.masthead-homepage {
   .post-preview > a > .post-title {
     font-size: 36px; } }
 
+h1.post-header {
+  font-size: 1.5rem;
+  text-align: center; }
+  @media only screen and (min-width: 992px) {
+    h1.post-header {
+      font-size: 2.2rem; } }
+
 .post {
   max-width: 592px;
   margin: 0 auto; }
   .post img {
     max-width: 100%; }
   .post .post-text {
-    font-size: 20px; }
-    @media only screen and (max-width: 992px) {
+    font-size: 16px; }
+    @media only screen and (min-width: 992px) {
       .post .post-text {
-        font-size: 16px; } }
+        font-size: 20px; } }
 
 .floating-label-form-group {
   font-size: 14px;
@@ -511,7 +518,17 @@ footer {
 
 .info-link {
   color: #0085A1;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.2rem; }
+  .info-link:hover {
+    color: #dc3545; }
+  @media (min-width: 576px) {
+    .info-link {
+      text-align: inherit;
+      font-size: 1.6rem;
+      padding: 1.5rem 0; } }
 
 @media (min-width: 768px) {
   .info-timetable {
