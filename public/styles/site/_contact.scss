@@ -16,10 +16,10 @@
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: Yahei;
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei";
     &::-webkit-input-placeholder {
       color: $gray-600;
-      font-family: Yahei;
+      font-family: Georgia, "Times New Roman", "Microsoft YaHei";
     }
   }
   label {

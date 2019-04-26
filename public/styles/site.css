@@ -1,11 +1,7 @@
-@font-face {
-  font-family: "Yahei";
-  src: url("/fonts/Microsoft Yahei.ttf"); }
-
 body {
   font-size: 16px;
   color: #212529;
-  font-family: Yahei; }
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
 
 hr {
   max-width: 50px;
@@ -25,7 +21,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: Yahei; }
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
 
 section {
   padding: 6rem 0; }
@@ -88,7 +84,7 @@ figcaption {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: Yahei; }
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40;
@@ -208,7 +204,7 @@ header.masthead {
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      font-family: Yahei; }
+      font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading h1,
       header.masthead .site-heading h1 {
@@ -223,12 +219,12 @@ header.masthead {
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
-    font-family: Yahei; }
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
   header.masthead .post-heading .meta {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    font-family: Yahei; }
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
     header.masthead .post-heading .meta a {
       color: #fff; }
   @media only screen and (min-width: 768px) {
@@ -334,11 +330,11 @@ h1.post-header {
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: Yahei; }
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
     .floating-label-form-group input::-webkit-input-placeholder,
     .floating-label-form-group textarea::-webkit-input-placeholder {
       color: #868e96;
-      font-family: Yahei; }
+      font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -397,7 +393,7 @@ footer {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 10px;
-  font-family: Yahei;
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei";
   cursor: pointer; }
 
 .btn-primary {
@@ -439,7 +435,7 @@ footer {
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         padding: 0 15px;
-        font-family: Yahei; }
+        font-family: Georgia, "Times New Roman", "Microsoft YaHei"; }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 14px;
         font-weight: 600;
